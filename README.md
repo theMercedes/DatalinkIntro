@@ -1,10 +1,9 @@
 
 ### Datalink technology
-Definition: a means of connecting one location to another, to transmit and receive digital data. 
+Definition: a means of connecting one location to another, to transmit and receive digital air/ground data. 
 
 Datalink communications are characterized by any information relayed from the aircraft to the ground or from aircraft to aircraft. Specifically, datalink systems include information shared over networks like the **Aircraft Communication Addressing and Reporting System (ACARS)** and the **Aeronautical Telecommunications Network (ATN)**. Both networks utilize high-frequency (HF) or very high-frequency (****) datalink and satellite communications to send messages.  
 
-In most cases, pilot to **Air Traffic Control (ATC)** communications are made via the ACARS datalink system because it's available over transoceanic flights. Due to this, most Future Air Navigation System (FANS) avionics are ACARS-based.
 
 #### Example of datalink communications: 
 1.  **OOOI events** 
@@ -28,11 +27,13 @@ In most cases, pilot to **Air Traffic Control (ATC)** communications are made vi
 > If there's too much communication traffic at a specific frequency channel, the  ground station initiates an automated frequency change to another channel (**Remote Tuning**).
 
 ### ACARS 
-##### (Aircraft Communications, Addressing and Reporting System)
+##### (Aircraft Communications Addressing and Reporting System)
 
-ACARS (pronounced AY-CARS) is a digital datalink system for the transmission of short, simple messages between aircraft and ground stations via **radio** or **satellite**. At first it relied exclusively on  channels but more recently, alternative means of data transmission have been added, enhancing its geographical coverage.
+ACARS (pronounced AY-CARS) is a digital datalink system for the transmission of short, simple messages between aircraft and ground stations via **radio** or **satellite**. At first it relied exclusively on channels but more recently, alternative means of data transmission have been added, enhancing its geographical coverage.
 
-ARINC’s (Aeronautical Radio, Inc.) developed the ACARS **AEEC** (airlines electronic engineering committee) **618** protocol by the end of the 1970s. This was followed by SITA’s (Systemes Internationale de Telecommunications Aeronautique) launch of its ** AIRCOM** service, based on the same communications protocol, positioning ACARS as the industry’s standard for real time data exchange between aircraft and flight crews, and operators’ ground-based staff and systems.
+ARINC (Aeronautical Radio, Inc.) developed the ACARS **AEEC** (airlines electronic engineering committee) **618** protocol by the end of the 1970s. This was followed by SITA (Systemes Internationale de Telecommunications Aeronautique) launching its ** AIRCOM** service, based on the same communications protocol, positioning ACARS as the industry’s standard for real time data exchange between aircraft and flight crews, and operators’ ground-based staff and systems.
+
+In most cases, pilot to **Air Traffic Control (ATC)** communications are made via the ACARS datalink system because it's available over transoceanic flights. Due to this, most Future Air Navigation System (FANS) avionics are ACARS-based.
 
 > Arinc now operates under the commercial name Rockwell Collins and is SITA's main competitor. SITA has always used the ARINC 618 protocol for its Datalink services. SITA and Collins are the only two companies in the world that provide datalink services and  technology to the aeronautical industry. 
 
@@ -40,10 +41,10 @@ Modern ACARS equipment now includes the facility for **automatic** initiation of
 
 There are three types of ACARS messages: 
 * **ATC (Air Traffic Control)**
-    *   ATC messages include:
-    * aircraft requests for clearances
+    * ATC messages include:
+    * Aircraft requests for clearances
     * ATC issue of clearances and instructions to aircraft. 
-    * used often to deliver Pre-Departure, Datalink ATIS and en route Oceanic Clearances. 
+    * Used often to deliver Pre-Departure, Datalink ATIS and en route Oceanic Clearances. 
 
 * **AOC (Aeronautical Operational Control)**
 * **AAC (Airline Administrative Control)**
@@ -74,18 +75,21 @@ Other examples of typical ACARS messages:
 
 
 ### The Service Provider (SITA)
-Ground-based ACARS networks are globally operated by two main **Datalink Service Providers** (DSP).
+
+As mentioned before, the two main DSPs globally are Rockwell Collins/ARINC (SITA's competitor) and **SITA**.
+>   ARINC (Traffic designated to ARINC is routed to the appropriate Data Service Processor in Chicago via separate telex connections). USA is ARINC-ACARS dominant at 131.550 MHz
+> 
+All ground-based ACARS networks are globally operated by the two main **Datalink Service Providers** (DSPs).
 The DSP is responsible for the movement of messages via radio link, usually to/from its own ground routing system. 
 
 ### Datalink Methods
 ACARS messages are transmitted using one of three possible datalink methods:
 
-* **VHF** or **VDL** (VHF Dataink) which is line-of-sight limited
-* **SATCOM** in areas where here is no link to a ground station, ACARS uses **satellite communication** (not available in polar regions)
+* **VHF** or **VDL** (VHF Datalink) which is line-of-sight limited
+* **SATCOM** In areas where there is no link to a ground station, ACARS uses **satellite communication** (not available in polar regions)
 * **HF** or **HFDL** (HF Data Link) which has been added especially for polar region communications. 
 
-As mentioned before, the two main DSPs globally are Rockwell Collins (SITA's competitor) and **SITA**.
->   ARINC (Traffic designated to ARINC is routed to the appropriate Data Service Processor in Chicago via separate telex connections). USA is ARINC-ACARS dominant at 131.550 MHz
+
 
 ### Aircraft Equipment
 * MU (Management Unit)
